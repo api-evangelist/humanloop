@@ -1,0 +1,132 @@
+aid: humanloop
+name: Humanloop
+description: >-
+  Humanloop was an LLM development platform for managing prompts, datasets,
+  evaluations, and production observability of LLM applications, used by AI
+  product teams at companies like Duolingo and Gusto. The platform offered a
+  collaborative prompt editor, versioned prompts and tools, evaluation runs
+  (LLM-as-judge and code-based), dataset management, online evaluators, and
+  full request logging across OpenAI, Anthropic, Google, and other providers,
+  with Python and TypeScript SDKs and a REST API. In 2025 the Humanloop team
+  was acquired by Anthropic and the company has announced it is sunsetting
+  the standalone platform; an official migration guide is published for
+  existing customers. This record captures the historical API surface for
+  archival and discovery purposes.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - LLM Platform
+  - Prompt Management
+  - Evaluations
+  - LLM Ops
+  - Observability
+  - Datasets
+  - Prompts
+  - Tools
+  - Logs
+  - Multi-Provider
+  - Sunsetting
+  - Acquired
+url: https://raw.githubusercontent.com/api-evangelist/humanloop/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: humanloop:llm-platform
+    name: Humanloop LLM Platform API
+    description: >-
+      The Humanloop REST API and SDKs covered prompts, tools, datasets,
+      evaluations, evaluators, and logs for LLM applications. Developers
+      called prompt endpoints from production to capture logs, ran
+      evaluations against datasets, and managed versioned prompt
+      configurations. The platform is being sunset following the team's
+      acquisition by Anthropic in 2025.
+    humanURL: https://humanloop.com/docs
+    baseURL: https://api.humanloop.com/v5
+    tags:
+      - Prompts
+      - Tools
+      - Datasets
+      - Evaluations
+      - Evaluators
+      - Logs
+      - Files
+    properties:
+      - type: Documentation
+        url: https://humanloop.com/docs
+      - type: APIReference
+        url: https://humanloop.com/docs/api-reference
+      - type: SDK
+        url: https://github.com/humanloop/humanloop-python
+      - type: SDK
+        url: https://github.com/humanloop/humanloop-typescript
+      - type: GitHubOrganization
+        url: https://github.com/humanloop
+      - type: MigrationGuide
+        url: https://humanloop.com/docs/guides/migrating-from-humanloop
+      - type: SunsetAnnouncement
+        url: https://humanloop.com
+    features:
+      - name: Prompt Management
+        description: Versioned, collaborative prompt editor with structured variables and side-by-side comparisons.
+      - name: Evaluations
+        description: Run dataset-driven evaluations with LLM-as-judge and code-based evaluators.
+      - name: Datasets
+        description: Manage curated examples and production samples for evaluations and fine-tuning.
+      - name: Logs and Observability
+        description: Capture every LLM call with inputs, outputs, costs, and latencies for production debugging.
+      - name: Online Evaluators
+        description: Score live traffic in production with custom evaluators.
+      - name: Tools and Functions
+        description: Define reusable tools and function specs that prompts can call.
+      - name: Multi-Provider Routing
+        description: Use OpenAI, Anthropic, Google, and other providers through a single API surface.
+      - name: Python and TypeScript SDKs
+        description: First-class SDKs for invoking prompts and logging from application code.
+    useCases:
+      - name: Production Prompt Iteration
+        description: Update prompts in Humanloop without redeploying application code.
+      - name: LLM Evaluation
+        description: Score prompts and models against curated datasets before shipping.
+      - name: Production Monitoring
+        description: Log every LLM call and trace quality regressions in production.
+      - name: Cross-Functional Collaboration
+        description: Let PMs, designers, and engineers collaborate on prompts in one workbench.
+    integrations:
+      - name: OpenAI
+      - name: Anthropic
+      - name: Google
+      - name: Cohere
+      - name: AWS Bedrock
+      - name: Azure OpenAI
+      - name: LangChain
+      - name: LlamaIndex
+    authentication:
+      - type: API Key
+        description: Workspace API keys passed via the `X-API-KEY` header authenticated REST and SDK calls.
+common:
+  - type: Website
+    url: https://humanloop.com
+  - type: Documentation
+    url: https://humanloop.com/docs
+  - type: Blog
+    url: https://humanloop.com/blog
+  - type: GitHubOrganization
+    url: https://github.com/humanloop
+  - type: MigrationGuide
+    url: https://humanloop.com/docs/guides/migrating-from-humanloop
+  - type: MediaKit
+    url: https://humanloop.com/media-kit
+  - type: TermsOfService
+    url: https://humanloop.com/terms
+  - type: PrivacyPolicy
+    url: https://humanloop.com/privacy
+  - type: Twitter
+    url: https://x.com/humanloop
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/humanloop
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
