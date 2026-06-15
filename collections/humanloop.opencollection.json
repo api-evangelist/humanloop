@@ -1,0 +1,313 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Humanloop API",
+    "version": "5.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "List Prompts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/prompts"
+      },
+      "docs": "List Prompts"
+    },
+    {
+      "info": {
+        "name": "Create or upsert Prompt",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.humanloop.com/v5/prompts",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create or upsert Prompt"
+    },
+    {
+      "info": {
+        "name": "Get Prompt",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/prompts/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get Prompt"
+    },
+    {
+      "info": {
+        "name": "Delete Prompt",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://api.humanloop.com/v5/prompts/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete Prompt"
+    },
+    {
+      "info": {
+        "name": "Call a Prompt (invoke the underlying model and log the result)",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.humanloop.com/v5/prompts/call",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Call a Prompt (invoke the underlying model and log the result)"
+    },
+    {
+      "info": {
+        "name": "Log a Prompt call",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.humanloop.com/v5/prompts/log",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Log a Prompt call"
+    },
+    {
+      "info": {
+        "name": "List Tools",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/tools"
+      },
+      "docs": "List Tools"
+    },
+    {
+      "info": {
+        "name": "Upsert Tool",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.humanloop.com/v5/tools",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Upsert Tool"
+    },
+    {
+      "info": {
+        "name": "Get Tool",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/tools/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get Tool"
+    },
+    {
+      "info": {
+        "name": "List Datasets",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/datasets"
+      },
+      "docs": "List Datasets"
+    },
+    {
+      "info": {
+        "name": "Upsert Dataset",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.humanloop.com/v5/datasets",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Upsert Dataset"
+    },
+    {
+      "info": {
+        "name": "Get Dataset",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/datasets/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get Dataset"
+    },
+    {
+      "info": {
+        "name": "List Evaluators",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/evaluators"
+      },
+      "docs": "List Evaluators"
+    },
+    {
+      "info": {
+        "name": "Upsert Evaluator",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.humanloop.com/v5/evaluators",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Upsert Evaluator"
+    },
+    {
+      "info": {
+        "name": "Get Evaluator",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/evaluators/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get Evaluator"
+    },
+    {
+      "info": {
+        "name": "List Logs",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/logs"
+      },
+      "docs": "List Logs"
+    },
+    {
+      "info": {
+        "name": "Get Log",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/logs/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get Log"
+    },
+    {
+      "info": {
+        "name": "List Sessions",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/sessions"
+      },
+      "docs": "List Sessions"
+    },
+    {
+      "info": {
+        "name": "Create Session",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.humanloop.com/v5/sessions",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create Session"
+    },
+    {
+      "info": {
+        "name": "Get Session",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.humanloop.com/v5/sessions/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get Session"
+    }
+  ],
+  "bundled": true
+}
