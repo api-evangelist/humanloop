@@ -58,9 +58,9 @@ apis:
         url: https://humanloop.com/docs
       - type: APIReference
         url: https://humanloop.com/docs/api-reference
-      - type: SDK
+      - type: SDKs
         url: https://github.com/humanloop/humanloop-python
-      - type: SDK
+      - type: SDKs
         url: https://github.com/humanloop/humanloop-typescript
       - type: GitHubOrganization
         url: https://github.com/humanloop
@@ -127,7 +127,7 @@ common:
     url: https://x.com/humanloop
   - type: LinkedIn
     url: https://www.linkedin.com/company/humanloop
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://humanloop.com/llms.txt
 maintainers:
   - FN: Kin Lane
