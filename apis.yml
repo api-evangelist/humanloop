@@ -107,6 +107,8 @@ apis:
       - type: API Key
         description: Workspace API keys passed via the `X-API-KEY` header authenticated REST and SDK calls.
 common:
+  - type: AgenticAccess
+    url: agentic-access/humanloop-agentic-access.yml
   - type: DomainSecurity
     url: security/humanloop-domain-security.yml
   - type: Authentication
