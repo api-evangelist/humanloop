@@ -1,0 +1,70 @@
+openapi: 3.1.0
+info:
+  title: Humanloop Datasets Sessions API
+  description: 'Humanloop''s V5 REST API for managing and calling Prompts, Tools, Datasets,
+
+    Evaluators, Logs and Sessions. Authenticate with an API key sent as a Bearer
+
+    token in the Authorization header (or X-API-KEY header).
+
+    '
+  version: 5.0.0
+  contact:
+    name: Humanloop Docs
+    url: https://humanloop.com/docs
+servers:
+- url: https://api.humanloop.com/v5
+security:
+- bearerAuth: []
+- apiKeyAuth: []
+tags:
+- name: Sessions
+paths:
+  /sessions:
+    get:
+      summary: List Sessions
+      operationId: listSessions
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Sessions
+    post:
+      summary: Create Session
+      operationId: createSession
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Sessions
+  /sessions/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get Session
+      operationId: getSession
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Sessions
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY

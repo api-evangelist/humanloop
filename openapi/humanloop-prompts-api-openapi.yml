@@ -1,0 +1,139 @@
+openapi: 3.1.0
+info:
+  title: Humanloop Datasets Prompts API
+  description: 'Humanloop''s V5 REST API for managing and calling Prompts, Tools, Datasets,
+
+    Evaluators, Logs and Sessions. Authenticate with an API key sent as a Bearer
+
+    token in the Authorization header (or X-API-KEY header).
+
+    '
+  version: 5.0.0
+  contact:
+    name: Humanloop Docs
+    url: https://humanloop.com/docs
+servers:
+- url: https://api.humanloop.com/v5
+security:
+- bearerAuth: []
+- apiKeyAuth: []
+tags:
+- name: Prompts
+paths:
+  /prompts:
+    get:
+      summary: List Prompts
+      operationId: listPrompts
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Prompts
+    post:
+      summary: Create or upsert Prompt
+      operationId: upsertPrompt
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                model:
+                  type: string
+                template:
+                  type: string
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Prompts
+  /prompts/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get Prompt
+      operationId: getPrompt
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Prompts
+    delete:
+      summary: Delete Prompt
+      operationId: deletePrompt
+      responses:
+        '204':
+          description: Deleted
+      tags:
+      - Prompts
+  /prompts/call:
+    post:
+      summary: Call a Prompt (invoke the underlying model and log the result)
+      operationId: callPrompt
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                id:
+                  type: string
+                inputs:
+                  type: object
+                  additionalProperties: true
+                messages:
+                  type: array
+                  items:
+                    type: object
+                provider_api_keys:
+                  type: object
+                  additionalProperties:
+                    type: string
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Prompts
+  /prompts/log:
+    post:
+      summary: Log a Prompt call
+      operationId: logPrompt
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                path:
+                  type: string
+                inputs:
+                  type: object
+                  additionalProperties: true
+                output:
+                  type: string
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Prompts
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY

@@ -1,0 +1,70 @@
+openapi: 3.1.0
+info:
+  title: Humanloop Datasets Evaluators API
+  description: 'Humanloop''s V5 REST API for managing and calling Prompts, Tools, Datasets,
+
+    Evaluators, Logs and Sessions. Authenticate with an API key sent as a Bearer
+
+    token in the Authorization header (or X-API-KEY header).
+
+    '
+  version: 5.0.0
+  contact:
+    name: Humanloop Docs
+    url: https://humanloop.com/docs
+servers:
+- url: https://api.humanloop.com/v5
+security:
+- bearerAuth: []
+- apiKeyAuth: []
+tags:
+- name: Evaluators
+paths:
+  /evaluators:
+    get:
+      summary: List Evaluators
+      operationId: listEvaluators
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Evaluators
+    post:
+      summary: Upsert Evaluator
+      operationId: upsertEvaluator
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Evaluators
+  /evaluators/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get Evaluator
+      operationId: getEvaluator
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Evaluators
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
