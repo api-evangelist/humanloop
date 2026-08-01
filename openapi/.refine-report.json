@@ -1,0 +1,24 @@
+{
+  "provider": "humanloop",
+  "sources": [
+    "humanloop-datasets-api-openapi.yml",
+    "humanloop-evaluators-api-openapi.yml",
+    "humanloop-logs-api-openapi.yml",
+    "humanloop-prompts-api-openapi.yml",
+    "humanloop-sessions-api-openapi.yml",
+    "humanloop-tools-api-openapi.yml"
+  ],
+  "outputs": [
+    "humanloop-datasets-api-openapi.yml",
+    "humanloop-evaluators-api-openapi.yml",
+    "humanloop-logs-api-openapi.yml",
+    "humanloop-prompts-api-openapi.yml",
+    "humanloop-sessions-api-openapi.yml",
+    "humanloop-tools-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
