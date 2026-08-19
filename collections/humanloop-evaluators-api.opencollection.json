@@ -1,0 +1,68 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Humanloop Datasets Evaluators API",
+    "version": "5.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Evaluators",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Evaluators",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.humanloop.com/v5/evaluators"
+          },
+          "docs": "List Evaluators"
+        },
+        {
+          "info": {
+            "name": "Upsert Evaluator",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.humanloop.com/v5/evaluators",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Upsert Evaluator"
+        },
+        {
+          "info": {
+            "name": "Get Evaluator",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.humanloop.com/v5/evaluators/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Evaluator"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,68 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Humanloop Datasets Tools API",
+    "version": "5.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Tools",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Tools",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.humanloop.com/v5/tools"
+          },
+          "docs": "List Tools"
+        },
+        {
+          "info": {
+            "name": "Upsert Tool",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.humanloop.com/v5/tools",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Upsert Tool"
+        },
+        {
+          "info": {
+            "name": "Get Tool",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.humanloop.com/v5/tools/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Tool"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

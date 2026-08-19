@@ -1,0 +1,116 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Humanloop Datasets Prompts API",
+    "version": "5.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Prompts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Prompts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.humanloop.com/v5/prompts"
+          },
+          "docs": "List Prompts"
+        },
+        {
+          "info": {
+            "name": "Create or upsert Prompt",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.humanloop.com/v5/prompts",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create or upsert Prompt"
+        },
+        {
+          "info": {
+            "name": "Get Prompt",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.humanloop.com/v5/prompts/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get Prompt"
+        },
+        {
+          "info": {
+            "name": "Delete Prompt",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.humanloop.com/v5/prompts/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete Prompt"
+        },
+        {
+          "info": {
+            "name": "Call a Prompt (invoke the underlying model and log the result)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.humanloop.com/v5/prompts/call",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Call a Prompt (invoke the underlying model and log the result)"
+        },
+        {
+          "info": {
+            "name": "Log a Prompt call",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.humanloop.com/v5/prompts/log",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Log a Prompt call"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
