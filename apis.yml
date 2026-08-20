@@ -33,6 +33,19 @@ tags:
   - LLM Platform
   - Prompt Management
   - Evaluations
+  - LLMOps
+  - Observability
+  - Datasets
+  - Prompts
+  - Tools
+  - Logs
+  - Multi-Provider
+  - Sunsetting
+  - Acquired
+tags_raw:
+  - LLM Platform
+  - Prompt Management
+  - Evaluations
   - LLM Ops
   - Observability
   - Datasets
@@ -57,6 +70,14 @@ apis:
   humanURL: https://humanloop.com/docs
   baseURL: https://api.humanloop.com/v5
   tags:
+  - Prompts
+  - Tools
+  - Datasets
+  - Evaluations
+  - Evaluators
+  - Logs
+  - File
+  tags_raw:
   - Prompts
   - Tools
   - Datasets
