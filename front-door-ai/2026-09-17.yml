@@ -1,0 +1,27 @@
+# Front Door AI Index — humanloop — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: humanloop
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: humanloop.com
+  final_host: humanloop.com
+  ownership: own
+  owner: humanloop
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 13
+  host_score: 13
+  density: 52.21
+  words: 249
+  tiers:
+    agentic: 0
+    core: 8
+    model: 5
+  ambiguous: 0
+  top_terms:
+    AI: 7
+    Anthropic: 5
+    LLMs: 1

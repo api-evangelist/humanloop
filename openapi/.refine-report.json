@@ -1,12 +1,7 @@
 {
   "provider": "humanloop",
   "sources": [
-    "humanloop-datasets-api-openapi.yml",
-    "humanloop-evaluators-api-openapi.yml",
-    "humanloop-logs-api-openapi.yml",
-    "humanloop-prompts-api-openapi.yml",
-    "humanloop-sessions-api-openapi.yml",
-    "humanloop-tools-api-openapi.yml"
+    "_original/humanloop-openapi.yml"
   ],
   "outputs": [
     "humanloop-datasets-api-openapi.yml",
@@ -19,6 +14,43 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "humanloop-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "humanloop-openapi.yml: tagged paths GET /prompts -> Prompts",
+    "humanloop-openapi.yml: tagged paths POST /prompts -> Prompts",
+    "humanloop-openapi.yml: tagged paths GET /prompts/{id} -> Prompts",
+    "humanloop-openapi.yml: tagged paths DELETE /prompts/{id} -> Prompts",
+    "humanloop-openapi.yml: tagged paths POST /prompts/call -> Prompts",
+    "humanloop-openapi.yml: tagged paths POST /prompts/log -> Prompts",
+    "humanloop-openapi.yml: tagged paths GET /tools -> Tools",
+    "humanloop-openapi.yml: tagged paths POST /tools -> Tools",
+    "humanloop-openapi.yml: tagged paths GET /tools/{id} -> Tools",
+    "humanloop-openapi.yml: tagged paths GET /datasets -> Datasets",
+    "humanloop-openapi.yml: tagged paths POST /datasets -> Datasets",
+    "humanloop-openapi.yml: tagged paths GET /datasets/{id} -> Datasets",
+    "humanloop-openapi.yml: tagged paths GET /evaluators -> Evaluators",
+    "humanloop-openapi.yml: tagged paths POST /evaluators -> Evaluators",
+    "humanloop-openapi.yml: tagged paths GET /evaluators/{id} -> Evaluators",
+    "humanloop-openapi.yml: tagged paths GET /logs -> Logs",
+    "humanloop-openapi.yml: tagged paths GET /logs/{id} -> Logs",
+    "humanloop-openapi.yml: tagged paths GET /sessions -> Sessions",
+    "humanloop-openapi.yml: tagged paths POST /sessions -> Sessions",
+    "humanloop-openapi.yml: tagged paths GET /sessions/{id} -> Sessions",
+    "humanloop-openapi.yml: declared missing tag: Datasets",
+    "humanloop-openapi.yml: declared missing tag: Evaluators",
+    "humanloop-openapi.yml: declared missing tag: Logs",
+    "humanloop-openapi.yml: declared missing tag: Prompts",
+    "humanloop-openapi.yml: declared missing tag: Sessions",
+    "humanloop-openapi.yml: declared missing tag: Tools",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "humanloop-datasets-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "humanloop-evaluators-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "humanloop-logs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "humanloop-prompts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "humanloop-sessions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "humanloop-tools-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
