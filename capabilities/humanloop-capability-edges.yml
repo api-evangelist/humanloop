@@ -1,0 +1,35 @@
+slug: humanloop
+provider: Humanloop
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Prompts
+  spec_file: humanloop-prompts-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.78
+  evidence: POST /prompts/call "Call a Prompt (invoke the underlying model and log the result)"; "Create
+    or upsert Prompt"; "Log a Prompt call"
+  reason: Versioned prompt assets plus model invocation and logging are the core artefacts of LLM application
+    lifecycle management, i.e. AI/ML model lifecycle and MLOps. No other candidate covers prompt engineering.
+- tag: Evaluators
+  spec_file: humanloop-evaluators-api-openapi.yml
+  capability_id: BC-610.60
+  capability_id_l1: BC-610
+  capability_name: Artificial Intelligence Management
+  confidence: 0.72
+  evidence: List Evaluators / Upsert Evaluator / Get Evaluator; vendor offers "evaluation runs (LLM-as-judge
+    and code-based), online evaluators"
+  reason: Evaluators are LLM-as-judge / code evaluation artefacts governing model output quality — squarely
+    AI/ML model lifecycle and responsible-AI tooling. Maps to Artificial Intelligence Management.
