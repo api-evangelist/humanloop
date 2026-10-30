@@ -1,4 +1,4 @@
-# Humanloop (humanloop)
+# Humanloop
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,80 +66,129 @@
 
 Humanloop was an LLM development platform for managing prompts, datasets, evaluations, and production observability of LLM applications, used by AI product teams at companies like Duolingo and Gusto. The platform offered a collaborative prompt editor, versioned prompts and tools, evaluation runs (LLM-as-judge and code-based), dataset management, online evaluators, and full request logging across OpenAI, Anthropic, Google, and other providers, with Python and TypeScript SDKs and a REST API. In 2025 the Humanloop team was acquired by Anthropic and the company has announced it is sunsetting the standalone platform; an official migration guide is published for existing customers. This record captures the historical API surface for archival and discovery purposes.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/humanloop/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/humanloop/refs/heads/main/apis.yml)
+**Areas:** LLM Platform · Prompt Management · Evaluation · LLMOps · Observability · Datasets · Prompts · Tools · Logs · Multi-Provider · Sunsetting · Acquired
 
-## Scope
+## Humanloop on APIs.io
 
-- **Type:** Index
-- **Position:** Provider
-- **Access:** 3rd-Party
+Everything profiled for Humanloop is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/humanloop/](https://apis.io/providers/humanloop/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (7)
 
-- LLM Platform
-- Prompt Management
-- Evaluations
-- LLM Ops
-- Observability
-- Datasets
-- Prompts
-- Tools
-- Logs
-- Multi-Provider
-- Sunsetting
-- Acquired
+- [Humanloop LLM Platform API](https://apis.io/apis/humanloop/llm-platform/) — The Humanloop REST API and SDKs covered prompts, tools, datasets, evaluations, evaluators, and logs for LLM applications. Developers called prompt endpoints…
+- [Humanloop Datasets API](https://apis.io/apis/humanloop/humanloop-datasets-api/) — The Datasets API from Humanloop — 2 operation(s) for datasets.
+- [Humanloop Evaluators API](https://apis.io/apis/humanloop/humanloop-evaluators-api/) — The Evaluators API from Humanloop — 2 operation(s) for evaluators.
+- [Humanloop Logs API](https://apis.io/apis/humanloop/humanloop-logs-api/) — The Logs API from Humanloop — 2 operation(s) for logs.
+- [Humanloop Prompts API](https://apis.io/apis/humanloop/humanloop-prompts-api/) — The Prompts API from Humanloop — 4 operation(s) for prompts.
+- [Humanloop Sessions API](https://apis.io/apis/humanloop/humanloop-sessions-api/) — The Sessions API from Humanloop — 2 operation(s) for sessions.
+- [Humanloop Tools API](https://apis.io/apis/humanloop/humanloop-tools-api/) — The Tools API from Humanloop — 2 operation(s) for tools.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Humanloop LLM Platform API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Humanloop REST API and SDKs covered prompts, tools, datasets, evaluations, evaluators, and logs for LLM applications. Developers called prompt endpoints from production to capture logs, ran evaluations against datasets, and managed versioned prompt configurations. The platform is being sunset following the team's acquisition by Anthropic in 2025.
+- [Humanloop Agentic Access](https://apis.io/agentic-access/humanloop/humanloop-agentic-access/)
 
-- **Human URL:** [https://humanloop.com/docs](https://humanloop.com/docs)
-- **Base URL:** `https://api.humanloop.com/v5`
+#### Collections (7)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Prompts
-- Tools
-- Datasets
-- Evaluations
-- Evaluators
-- Logs
-- Files
+- [Humanloop API](https://apis.io/collections/humanloop/open-humanloop/)
+- [Humanloop Datasets API](https://apis.io/collections/humanloop/open-humanloop-datasets-api/)
+- [Humanloop Datasets Evaluators API](https://apis.io/collections/humanloop/open-humanloop-evaluators-api/)
+- [Humanloop Datasets Logs API](https://apis.io/collections/humanloop/open-humanloop-logs-api/)
+- [Humanloop Datasets Prompts API](https://apis.io/collections/humanloop/open-humanloop-prompts-api/)
+- [Humanloop Datasets Sessions API](https://apis.io/collections/humanloop/open-humanloop-sessions-api/)
+- [Humanloop Datasets Tools API](https://apis.io/collections/humanloop/open-humanloop-tools-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://humanloop.com/docs)
-- [API Reference](https://humanloop.com/docs/api-reference)
-- [SDK](https://github.com/humanloop/humanloop-python)
-- [SDK](https://github.com/humanloop/humanloop-typescript)
-- [GitHub Organization](https://github.com/humanloop)
-- [Migration Guide](https://humanloop.com/docs/guides/migrating-from-humanloop)
-- [Sunset Announcement](https://humanloop.com)
-- [Postman Collection](collections/humanloop.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/humanloop.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Humanloop Authentication](https://apis.io/security/humanloop/humanloop-authentication/)
+- [Humanloop Domain Security](https://apis.io/security/humanloop/humanloop-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Humanloop Plans Pricing](https://apis.io/plans/humanloop/humanloop-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Humanloop Rate Limits](https://apis.io/rate-limits/humanloop/humanloop-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Humanloop Finops](https://apis.io/finops/humanloop/humanloop-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://humanloop.com)
 - [Documentation](https://humanloop.com/docs)
 - [Blog](https://humanloop.com/blog)
-- [GitHub Organization](https://github.com/humanloop)
-- [Migration Guide](https://humanloop.com/docs/guides/migrating-from-humanloop)
-- [Media Kit](https://humanloop.com/media-kit)
-- [Terms of Service](https://humanloop.com/terms)
-- [Privacy Policy](https://humanloop.com/privacy)
-- [Twitter](https://x.com/humanloop)
-- [LinkedIn](https://www.linkedin.com/company/humanloop)
-- [L L Ms Txt](https://humanloop.com/llms.txt)
+- [Terms of service](https://humanloop.com/terms)
+- [Privacy policy](https://humanloop.com/privacy)
+- [GitHub](https://github.com/humanloop)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 32.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 42.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 26.3 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/humanloop/](https://apis.io/providers/humanloop/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Humanloop: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/humanloop/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
